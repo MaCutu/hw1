@@ -1,0 +1,120 @@
+
+body{
+    margin:0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #004358;
+    background-color: #e8e8e8;
+    margin-bottom: 180px;
+}
+
+#logo{
+    display: flex;
+    height: auto;
+   align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+main{
+    text-align: center;
+    margin: auto;
+    max-width: 450px;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    margin-top: 8px;
+    border: solid #004358;
+}
+
+.name, .surname, .username, .email, .password, .conf_password{
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.allow input{
+    width: 30px;
+    height: 30px;
+}
+
+.allow{
+    text-align: left;
+}
+
+.submit input{
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #004358;
+    margin-top: 28px;
+}
+
+form img{
+    opacity: 0;
+    width: 13px;
+    margin-right: 10px;
+    height: 14px;
+    margin-top: 10px;
+    transition: opacity 0.3s ease;
+}
+
+form span{
+    opacity: 0;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.errorinsert label{
+    color:red
+}
+
+.errorinsert span{
+    opacity: 1;
+    color: red;
+} 
+
+.errorinsert img{
+    opacity: 1;
+}
+
+.errorinsert input{
+    border-color: red;
+}
+
+.button{
+    border-radius: 30px;
+    border: 3px solid #004358;
+    display: block;
+    padding: 10px;
+    font-size: larger;
+    text-decoration: none;
+    color: #004358;
+    font-weight: bold;
+}
+
+.button:hover{
+    color:#e8e8e8;
+    background-color: #004358;
+    transition-duration: .3s;
+}
+
+
+.submit input:hover{
+    color:#e8e8e8;
+    background-color: #004358;
+    transition-duration: .3s;
+}
+
+form{
+    padding-bottom: 31px;
+    border-bottom: 1px solid #004358
+}
+
+
+
+
+

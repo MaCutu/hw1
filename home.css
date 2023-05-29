@@ -1,0 +1,201 @@
+body{
+    margin:0;
+    color: rgb(16, 139, 176);
+}
+
+header{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    background-image: url('./pics/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height:90%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header nav{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+div img{
+    height:100px;
+}
+
+a{
+    margin:15px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+a:hover{
+    transition-duration: .3s;
+    color:whitesmoke;
+}
+
+#barra{
+    height:55px;
+    width: 1px;
+    background: currentColor;
+}
+
+.button{
+    background-color: #ff1761;
+    padding: 5px;
+    border-radius: 60px;
+    color: #258bb0;
+}
+
+.button:hover{
+    background-color:#258bb0 ;
+    color: whitesmoke;
+    transition-duration: .3s;
+}
+
+#accesso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#iscriviti{
+    font-size: medium;
+    text-decoration: underline;
+    margin-top: -10px;
+    background-color: #ff1761;
+    color: #258bb0;
+}
+
+#iscriviti:hover{
+    background-color:#258bb0 ;
+    color: whitesmoke;
+    transition-duration: .3s;
+}
+
+header h1{
+    margin-right: 950px;
+}
+
+footer{
+    background-color: #610047;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+@media(max-width: 500px){
+    nav a{
+        display:none;
+    }
+
+    nav #barra{
+        display:none;
+    }
+
+    nav #accesso{
+        display:none;
+    }
+}
+
+#icona_sidebar{
+    display:none;
+}
+
+#icona_sidebar div{
+    height: 5px;
+    width:60px;
+    background-color: #ff1761;
+}
+
+@media(max-width:500px){
+    #icona_sidebar{
+        width: 100px;
+    height: 39px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-bottom: 20px;
+    }
+
+    h1{
+        margin-left:750px;
+    }
+}
+
+.menulaterale{
+    display:none;
+}
+
+@media(max-width:500px){
+    .menulaterale{
+        width:100%;
+        height: 100%;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 2;
+        align-items: center;
+        justify-content: center;
+        color: #258bb0;
+        display:none;
+        margin-top:100px;
+        opacity: 0;
+    }
+
+    .menulaterale a{
+        margin:15px;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+        cursor:pointer;
+        color:#258bb0;
+    }
+
+    .menulaterale .button{
+        background-color: #ff1761;
+        padding: 5px;
+        border-radius: 60px;
+        color: #258bb0;
+    }
+
+    .menulaterale .barra{
+        width:100px;
+        height: 1px;
+        background: currentColor;
+        color:white;
+    }
+
+    .menulaterale .accesso{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .classeclick{
+        display:flex ;
+        opacity:1;
+        margin-top: 0px;
+    }
+    
+
+
+}
